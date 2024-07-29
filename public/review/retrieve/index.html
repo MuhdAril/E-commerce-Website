@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Review Management | Retrieve Review</title>
+    <link href="/main.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../product/">Product</a>
+        <a href="../">Review</a>
+        <a href="../../favourite/">Favourite</a>
+        <a href="../../cart/">Cart</a>        
+        <a href="#" onclick="logout()">Logout</a>     
+    </header>
+    <section>
+        <div>
+            <h1>Retrieve My Review</h1>
+            <input type="number" id="reviewIdInput" placeholder="Enter Review ID" />
+            <button id="fetchReviewButton">Fetch Review</button>
+            <div id="review-container"></div>
+        </div>
+    </section>
+    <script src="../../auth.js" type="text/javascript"></script>
+</body>
+
+</html>

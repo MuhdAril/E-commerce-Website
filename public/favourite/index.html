@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Favourite Product Management</title>
+    <link href="../main.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../product/">Product</a>
+        <a href="../review/">Review</a>
+        <a href="./">Favourite</a>
+        <a href="../cart/">Cart</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </header>
+    <section>
+        <h1 class="larger">Favourites</h1>
+        <div>
+            <h1>Add to favourites</h1>
+            <form>
+                <label for="productId">Product Id</label>
+                <input type="text" id="productId" name="productId" pattern="[0-9]*" inputmode="numeric" title="Numbers only" required />
+                <button type="submit">Add</button>
+
+
+            </form>
+        </div>
+        <div>
+            <h1>All your favourites</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Unit Price</th>
+                        <th>Product Type</th>
+                        <th>Image</th>
+                        <th>Favourite Date</th>
+                        <th>View Product</th>
+                        <th>Add to Cart</th>
+                        <th>Remove Favourite</th>
+                    </tr>
+                </thead>
+                <tbody id="product-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="../auth.js" type="text/javascript"></script>
+</body>
+
+</html>
+
+
+
+<html>
